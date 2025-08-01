@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "YT-Autoscroll",
+    "version": "1.0",
+    "description": "Adds autoscroll function for watching youtube shorts",
+    "permissions": [
+        "tabs"
+    ],
+    "icons": {
+        "48": "icons/swipe_vertical_48dp.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/shorts/*"
+            ],
+            "js": [
+                "yt-autoscroll.js"
+            ]
+        }
+    ]
+}
